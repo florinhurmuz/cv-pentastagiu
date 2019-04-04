@@ -1,0 +1,127 @@
+/*
+ * GENERAL
+ */
+html, body, ul, ol, li, p {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-family: "Arial", "Helvetica", sans-serif;
+	text-transform: uppercase;
+}
+
+/*
+ * HELPER
+ */
+.text-bold {
+	font-weight: bold;
+}
+.text-italic {
+	font-style: italic;
+}
+.text-center {
+	text-align: center;
+}
+.wrapper {
+	box-sizing: border-box;
+	display: block;
+	width: 70%;
+	margin: 40px auto 0;
+}
+.divider {
+	width: 25%;
+	height: 1px;
+	margin: 0 auto;
+	background-color: #999;
+}
+img.icon {
+	width: 20px;
+	height: 20px;
+}
+
+/*
+ * SPECIFIC
+ */
+.flex-container {
+	/* flexbox */
+	display: flex;
+	flex-direction: column-reverse;
+}
+section {
+	padding: 20px;
+	border: 2px dashed #000;
+	position: relative;
+}
+section .title {
+	padding: 0 10px;
+	background-color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	position: absolute;
+	top: -0.75em;
+}
+section .text {
+	font-size: 1.1em;
+
+	/* flexbox */
+	display: flex;
+	flex-direction: row-reverse;
+}
+section .text.no-flex {
+	display: block;
+	flex: none;
+}
+section .text + .text {
+	margin-top: 30px;
+}
+section .box-left {
+	/* flexbox */
+	display: flex;
+	flex-direction: column-reverse;
+	flex-basis: 40%;
+	align-items: flex-end;
+}
+section .box-right {
+	/* flexbox */
+	flex-basis: 60%;
+}
+section .skill_list {
+	list-style: none;
+
+	/* flexbox */
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+section .skill_list > li {
+	margin: 10px;
+	padding: 5px;
+	border-bottom: 2px solid darkblue;
+	border-right: 1px solid darkblue;
+	border-top: 1px solid gray;
+	border-left: 1px solid gray;
+
+	/* flexbox */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section .skill_list #js {
+
+}
+section .skill_list #css3 {
+	/* flexbox */
+	flex-grow: 1;
+}
+section .skill_list #html5 {
+
+}
+section .skill_list #reacjs {
+	/* flexbox */
+	flex-grow: 1;
+}
+section .skill_list > li > span {
+	margin-left: 5px;
+	padding: 2px 5px;
+}
